@@ -28,6 +28,15 @@ def main():
     logging.debug("Constructing get subparser")
     get_parser = subparsers.add_parser("get", help="Retrieve a snippet")
     get_parser.add_argument("name", help="The name of the snippet")
+    
+    # Subparser for the catalog command
+    logging.debug("Constructing catalog subparser")
+    catalog_parser = subparsers.add_parser("catalog", help="List names of stored snippets")
+    
+    # Subparer for the search command
+    logging.debug("Constructing search subparser")
+    search_parser = subparsers.add_parser("search", help="Search stored messages")
+    search_parser.add_argument("string", help="The string to search for")
 
     arguments = parser.parse_args(sys.argv[1:])
     
@@ -41,9 +50,34 @@ def main():
     elif command == "get":
         snippet = get(**arguments)
         print("Retrieved snippet: {!r}".format(snippet))
+    elif command == "catalog":
+        print("Catalog of stored snippets: {!r}".format(catalog()))
+    elif command == "search":
+        results = search(**arguments)
+        print("Search returned the following snippets: {!r}".format(results))
     
+def search(string):
+    """ search for a string within the stored messages"""
+    logging.info("Search stored messages for a string")
+    cursor = connection.cursor()
+    command = "select * from snippets  where message  like %s"
+    with connection, connection.cursor() as cursor:
+        cursor.execute(command, ("%"+string+"%",))
+        row = cursor.fetchall()
+    if not row:
+        return "nothing matches search term"
+    return row
 
-
+def catalog():
+    """ Return a list containing the name of each stored snippet """
+    logging.info("Returning catalog of snippet names")
+    cursor = connection.cursor()
+    command = "select keyword from snippets order by keyword"
+    with connection, connection.cursor() as cursor:
+        cursor.execute(command)
+        row = cursor.fetchall()
+    row = [i[0] for i in row]
+    return row
 
 def put(name, snippet):
     """Store a snippet with an associated name."""
@@ -61,6 +95,7 @@ def put(name, snippet):
     
         
     logging.debug("Snippet stored successfully.")
+  
     return name, snippet
 
 

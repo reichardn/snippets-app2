@@ -114,3 +114,152 @@ DEBUG:root:Constructing put subparser
 DEBUG:root:Constructing get subparser
 INFO:root:Retrieving snippet 'y'
 DEBUG:root:Snippet retrieved successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Retrieving snippet 'x'
+DEBUG:root:Snippet retrieved successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Retrieving snippet 'insert22'
+DEBUG:root:Snippet retrieved successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Returning catalog of snippet names
+INFO:root:Returning catalog of snippet names
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Returning catalog of snippet names
+INFO:root:Returning catalog of snippet names
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Returning catalog of snippet names
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+INFO:root:Retrieving snippet 'test'
+DEBUG:root:Snippet retrieved successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Returning catalog of snippet names
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+INFO:root:Returning catalog of snippet names
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+INFO:root:Returning catalog of snippet names
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Search stored messages for a string
+INFO:root:Search stored messages for a string
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+DEBUG:root:Constructing search subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+DEBUG:root:Constructing search subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+DEBUG:root:Constructing search subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+DEBUG:root:Constructing search subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+DEBUG:root:Constructing search subparser
+INFO:root:Returning catalog of snippet names
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+DEBUG:root:Constructing search subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Retrieving snippet 'x'
+DEBUG:root:Snippet retrieved successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+DEBUG:root:Constructing search subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+DEBUG:root:Constructing search subparser
+INFO:root:Retrieving snippet 'x'
+DEBUG:root:Snippet retrieved successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Constructing catalog subparser
+DEBUG:root:Constructing search subparser
+INFO:root:Search stored messages for a string
