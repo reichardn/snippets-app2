@@ -23,6 +23,8 @@ def main():
     put_parser = subparsers.add_parser("put", help="Store a snippet")
     put_parser.add_argument("name", help="The name of the snippet")
     put_parser.add_argument("snippet", help="The snippet text")
+    put_parser.add_argument("--hidden", help="snippet is hidden",
+                    action="store_true")
     
     # Subparser for the get command
     logging.debug("Constructing get subparser")
@@ -60,7 +62,7 @@ def search(string):
     """ search for a string within the stored messages"""
     logging.info("Search stored messages for a string")
     cursor = connection.cursor()
-    command = "select * from snippets  where message  like %s"
+    command = "select * from snippets where message like %s and not hidden"
     with connection, connection.cursor() as cursor:
         cursor.execute(command, ("%"+string+"%",))
         row = cursor.fetchall()
@@ -72,26 +74,26 @@ def catalog():
     """ Return a list containing the name of each stored snippet """
     logging.info("Returning catalog of snippet names")
     cursor = connection.cursor()
-    command = "select keyword from snippets order by keyword"
+    command = "select keyword from snippets where not hidden order by keyword"
     with connection, connection.cursor() as cursor:
         cursor.execute(command)
         row = cursor.fetchall()
     row = [i[0] for i in row]
     return row
 
-def put(name, snippet):
+def put(name, snippet, hidden = False):
     """Store a snippet with an associated name."""
     logging.info("Storing snippet {!r}: {!r}".format(name, snippet))
     cursor = connection.cursor()
     
     with connection, connection.cursor() as cursor:
         try:
-            command = "insert into snippets values (%s, %s)"
-            cursor.execute(command, (name, snippet))
+            command = "insert into snippets values (%s, %s, %s)"
+            cursor.execute(command, (name, snippet, hidden))
         except psycopg2.IntegrityError as e:
             connection.rollback()
-            command = "update snippets set message=%s where keyword=%s"
-            cursor.execute(command, (snippet, name))
+            command = "update snippets set message=%s, hidden=%s where keyword=%s"
+            cursor.execute(command, (snippet, hidden, name))
     
         
     logging.debug("Snippet stored successfully.")
@@ -107,7 +109,6 @@ def get(name):
     Returns the snippet.
     """
     logging.info("Retrieving snippet {!r}".format(name))
-    command = "select * from snippets where keyword = %s"
     
     with connection, connection.cursor() as cursor:
         cursor.execute("select message from snippets where keyword=%s", (name,))
