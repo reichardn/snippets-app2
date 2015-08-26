@@ -69,3 +69,34 @@ INFO:root:Retrieving snippet 'test'
 DEBUG:root:Snippet retrieved successfully.
 INFO:root:Retrieving snippet 'test'
 DEBUG:root:Snippet retrieved successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Retrieving snippet 'test'
+DEBUG:root:Snippet retrieved successfully.
+INFO:root:Retrieving snippet 'x'
+DEBUG:root:Snippet retrieved successfully.
+INFO:root:Storing snippet 'test': 'this is still a test'
+DEBUG:root:Snippet stored successfully.
+INFO:root:Retrieving snippet 'test'
+DEBUG:root:Snippet retrieved successfully.
+INFO:root:Retrieving snippet 'test'
+DEBUG:root:Snippet retrieved successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Retrieving snippet 'test'
+DEBUG:root:Snippet retrieved successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Retrieving snippet 'test'
+DEBUG:root:Snippet retrieved successfully.
+INFO:root:Retrieving snippet 'x'
+DEBUG:root:Snippet retrieved successfully.
+INFO:root:Storing snippet 'x': 'the letter x'
+DEBUG:root:Snippet stored successfully.
+INFO:root:Retrieving snippet 'x'
+DEBUG:root:Snippet retrieved successfully.
