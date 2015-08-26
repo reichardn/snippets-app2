@@ -54,3 +54,18 @@ DEBUG:root:Constructing get subparser
 INFO:root:Constructing parser
 DEBUG:root:Constructing put subparser
 DEBUG:root:Constructing get subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Storing snippet 'test': 'this is a test'
+DEBUG:root:Snippet stored successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Retrieving snippet 'test'
+DEBUG:root:Snippet retrieved successfully.
+INFO:root:Retrieving snippet 'test'
+DEBUG:root:Snippet retrieved successfully.
