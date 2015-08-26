@@ -43,8 +43,6 @@ def main():
         print("Retrieved snippet: {!r}".format(snippet))
     
 
-if __name__ == "__main__":
-    main()
 
 
 def put(name, snippet):
@@ -85,3 +83,6 @@ def get(name):
         return "this entry doesn't exist"
     return row
   
+
+if __name__ == "__main__":
+    main()

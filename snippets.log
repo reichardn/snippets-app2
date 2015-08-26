@@ -100,3 +100,17 @@ INFO:root:Storing snippet 'x': 'the letter x'
 DEBUG:root:Snippet stored successfully.
 INFO:root:Retrieving snippet 'x'
 DEBUG:root:Snippet retrieved successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Storing snippet 'y': 'the letter y'
+DEBUG:root:Snippet stored successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Retrieving snippet 'y'
+DEBUG:root:Snippet retrieved successfully.
